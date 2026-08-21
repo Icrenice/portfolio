@@ -30,13 +30,13 @@ export default function Hero() {
           rel="noreferrer"
           className="rounded-full border border-zinc-800 px-6 py-3 text-sm font-medium text-zinc-300 transition hover:border-zinc-600 hover:text-white"
         >
-          GitHub ↗
+          GitHub
         </a>
       </div>
 
       <div className="mt-16 flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-500">
         <span>React</span>
-        <span>Next.js</span>
+        <span>Node.js</span>
         <span>TypeScript</span>
         <span>PHP</span>
         <span>Python</span>
