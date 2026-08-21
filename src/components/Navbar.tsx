@@ -13,7 +13,10 @@ export default function Navbar() {
         <a href="#about" className="transition hover:text-white">
           About
         </a>
-
+        
+        <a href="#contact" className="transition hover:text-white">
+          Contact
+        </a>
         <a
           href="https://github.com/Icrenice"
           target="_blank"

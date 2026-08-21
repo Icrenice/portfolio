@@ -1,3 +1,6 @@
+import Contact from "@/components/Contact";
+import Engineering from "@/components/Engineering";
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
@@ -45,6 +48,10 @@ export default function Home() {
           About
         </p>
       </section>
+
+      <Engineering />
+      <About />
+      <Contact />
     </main>
   );
 }
