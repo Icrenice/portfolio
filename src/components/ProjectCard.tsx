@@ -10,11 +10,18 @@ export default function ProjectCard({
   index,
 }: ProjectCardProps) {
   return (
-    <article className="border-t border-zinc-800 py-12">
-      <div className="mb-6 flex items-center justify-between">
-        <span className="text-sm text-zinc-500">
-          {String(index + 1).padStart(2, "0")}
-        </span>
+    <article className="border-t border-zinc-800 py-14">
+      <div className="mb-8 flex items-start justify-between gap-6">
+        <div>
+          <span className="text-sm text-zinc-600">
+            {String(index + 1).padStart(2, "0")}
+          </span>
+
+          <p className="mt-3 text-sm text-zinc-500">
+            {project.context}
+            {project.period && ` · ${project.period}`}
+          </p>
+        </div>
 
         <div className="flex gap-4 text-sm">
           {project.live && (
@@ -41,27 +48,47 @@ export default function ProjectCard({
         </div>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr]">
-        <div className="aspect-[16/9] overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900">
-          <img
-            src={project.image}
-            alt={`${project.title} screenshot`}
-            className="h-full w-full object-cover"
-          />
+      <div className="grid gap-10 lg:grid-cols-[1.25fr_1fr]">
+        <div className="flex min-h-[360px] items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
+          {project.image ? (
+            <img
+              src={project.image}
+              alt={`${project.title} screenshot`}
+              className="h-full w-full rounded-xl object-cover"
+            />
+          ) : (
+            <div className="max-w-md text-center">
+              <p className="text-sm uppercase tracking-[0.2em] text-zinc-600">
+                Project
+              </p>
+
+              <p className="mt-4 text-3xl font-semibold tracking-tight text-zinc-300">
+                {project.title}
+              </p>
+            </div>
+          )}
         </div>
 
-        <div className="flex flex-col justify-between">
-          <div>
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-              {project.title}
-            </h2>
+        <div className="flex flex-col">
+          <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
+            {project.title}
+          </h2>
 
-            <p className="mt-5 max-w-xl leading-relaxed text-zinc-400">
-              {project.description}
+          <p className="mt-5 leading-relaxed text-zinc-400">
+            {project.description}
+          </p>
+
+          <div className="mt-8">
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-zinc-600">
+              My contribution
+            </p>
+
+            <p className="mt-3 leading-relaxed text-zinc-400">
+              {project.contribution}
             </p>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="mt-auto flex flex-wrap gap-2 pt-10">
             {project.technologies.map((technology) => (
               <span
                 key={technology}

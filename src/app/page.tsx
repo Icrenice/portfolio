@@ -20,6 +20,10 @@ export default function Home() {
           <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
             Systems and applications I&apos;ve built.
           </h2>
+          <p className="mt-5 max-w-2xl text-zinc-400">
+            A selection of full stack applications, backend systems, and integration
+            projects from academic and professional work.
+          </p>
         </div>
 
         <div>
