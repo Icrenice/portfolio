@@ -20,7 +20,7 @@ export default function About() {
           <div className="mt-8 max-w-2xl space-y-5 leading-relaxed text-zinc-400">
             <p>
               I&apos;m a Full Stack Developer with a BSc in ICT. I enjoy working
-              across the full application lifecycle, from building user-facing
+              across the full application lifecycle, from building user facing
               features to designing APIs, working with databases and integrating
               external systems.
             </p>

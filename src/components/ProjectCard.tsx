@@ -24,6 +24,17 @@ export default function ProjectCard({
         </div>
 
         <div className="flex gap-4 text-sm">
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noreferrer"
+              className="text-zinc-400 transition hover:text-white"
+            >
+              Demo ↗
+            </a>
+          )}
+
           {project.live && (
             <a
               href={project.live}

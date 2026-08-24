@@ -23,7 +23,7 @@ export default function Contact() {
 
           <div className="flex flex-col gap-3 text-sm">
             <a
-              href="mailto:YOUR-EMAIL"
+              href="mailto:eric.abrokwah.dev@gmail.com"
               className="text-zinc-400 transition hover:text-white"
             >
               Email ↗

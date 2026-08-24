@@ -11,7 +11,7 @@ export default function Hero() {
       </h1>
 
       <p className="mt-8 max-w-2xl text-lg leading-relaxed text-zinc-400">
-        I build full-stack applications and backend systems,
+        I build full stack applications and backend systems,
         working across APIs, databases, application logic,
         and deployment.
       </p>
@@ -40,6 +40,7 @@ export default function Hero() {
         <span>TypeScript</span>
         <span>PHP</span>
         <span>Python</span>
+        <span>C#</span>
         <span>REST APIs</span>
         <span>Docker</span>
         <span>SQL</span>

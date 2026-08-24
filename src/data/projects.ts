@@ -8,29 +8,30 @@ export type Project = {
   image?: string;
   github?: string;
   live?: string;
+  demo?: string;
 };
 
 export const projects: Project[] = [
   {
-    title: "Event Synchronization Platform",
-    context: "Graduation Internship",
-    period: "Feb 2026 — Jul 2026",
+    title: "Event Sync Plugin",
+    context: "Graduation Internship · Eagerly",
     description:
-      "A modular event synchronization system for WordPress that ingests data from multiple ticketing providers, normalizes it into a canonical event model, and exposes consistent event data to WordPress and headless frontends.",
+      "A provider-independent event synchronization platform for WordPress, designed to normalize event data from multiple ticketing systems into a canonical internal model and expose it consistently to headless frontends through GraphQL.",
+
     contribution:
-      "Designed and developed the synchronization architecture, including provider adapters, mappers, repositories, scheduled synchronization, webhooks, custom database persistence, and GraphQL integration.",
+      "Analyzed the existing event architecture and designed and implemented a layered replacement around an Event Core Model. Built provider adapters, API clients and mappers, custom database persistence, synchronization strategies, WordPress integration and WPGraphQL exposure, supported by automated and acceptance testing.",
+
     technologies: [
       "PHP",
       "WordPress",
       "Composer",
+      "MySQL",
       "REST APIs",
       "WPGraphQL",
-      "SQL",
       "Webhooks",
       "Cron",
-      "PHPUnit",
-      "Docker",
-    ],
+      "PHPUnit"
+    ]
   },
 
   {
@@ -38,9 +39,9 @@ export const projects: Project[] = [
     context: "1st Place · School Competition",
     period: "Sep 2024 — Jan 2025",
     description:
-      "An AI-powered cross-platform fitness application that motivates users through personalized daily quests, progress tracking, streaks, and social competition.",
+      "An AI powered crossplatform fitness application that motivates users through personalized daily quests, progress tracking, streaks, and social competition.",
     contribution:
-      "Built in a two-person team with shared full-stack responsibility. My main technical contributions included OpenAI-powered quest generation, backend architecture, scheduling logic, API integration and testing, while also contributing to the React Native mobile application.",
+      "Built in a two person team with shared full stack responsibility. My main technical contributions included OpenAI powered quest generation, backend architecture, scheduling logic, API integration and testing, while also contributing to the React Native mobile application.",
     technologies: [
       "React Native",
       "Expo",
@@ -50,7 +51,10 @@ export const projects: Project[] = [
       "OpenAI",
       "REST APIs",
       "GitHub Actions",
-    ],
+      "CRON Jobs",
+      ],
+    image: "/projects/fitness-leveling/logo.png",
+    demo: "/projects/fitness-leveling/demo.mp4",
   },
 
   {
