@@ -5,16 +5,12 @@ export type Project = {
   description: string;
   contribution: string;
   technologies: string[];
-  image?: string;
-  github?: string;
-  live?: string;
-  demo?: string;
+  image: string;
   links?: {
-  label: string;
-  href: string;
-}[];
+    label: string;
+    href: string;
+  }[];
 };
-
 export const projects: Project[] = [
   {
     title: "Event Sync Plugin",
@@ -63,7 +59,7 @@ export const projects: Project[] = [
     context: "1st Place · School Competition",
     period: "Sep 2024 — Jan 2025",
     description:
-      "An AI powered crossplatform fitness application that motivates users through personalized daily quests, progress tracking, streaks, and social competition.",
+      "An AI powered cross platform fitness application that motivates users through personalized daily quests, progress tracking, streaks, and social competition.",
     contribution:
       "Built in a two person team with shared full stack responsibility. My main technical contributions included OpenAI powered quest generation, backend architecture, scheduling logic, API integration and testing, while also contributing to the React Native mobile application.",
     technologies: [
@@ -87,10 +83,10 @@ export const projects: Project[] = [
   },
 
   {
-    title: "Zoo Management API",
+    title: "Zoo Management System",
     context: "Software Engineering Project",
     description:
-      "A .NET application for managing animals, enclosures, categories, and zoo operations through a REST API with persistent relational data and domain-specific business logic.",
+      "An ASP.NET Core application for managing animals, enclosures, categories, and zoo operations through a REST API and web interface, backed by persistent relational data and domain-specific business logic.",
     contribution:
       "Implemented the ASP.NET Core application, REST endpoints, Entity Framework data layer, domain logic, database modelling, API documentation, and automated tests.",
     technologies: [
@@ -98,7 +94,8 @@ export const projects: Project[] = [
       "ASP.NET Core",
       "REST APIs",
       "Entity Framework",
-      "SQL Server",
+      "SQLite",
+      "MVC",
       "Testing",
     ],
     image: "/projects/zoo-api/zoo-management-diagram.png",
