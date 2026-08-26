@@ -29,9 +29,11 @@ export const projects: Project[] = [
       "REST APIs",
       "WPGraphQL",
       "Webhooks",
+      "SOAP",
       "Cron",
       "PHPUnit"
-    ]
+    ],
+    image: "/projects/Event-sync/c2 event-sync.png",
   },
 
   {
@@ -73,5 +75,6 @@ export const projects: Project[] = [
       "Testing",
     ],
     github: "https://github.com/Icrenice/Csharp-eindopdracht",
+    image: "projects/zoo-api/zoo-magemant-diagram.png",
   },
 ];

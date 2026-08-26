@@ -60,24 +60,12 @@ export default function ProjectCard({
       </div>
 
       <div className="grid gap-10 lg:grid-cols-[1.25fr_1fr]">
-        <div className="flex min-h-[360px] items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900/40 p-8">
-          {project.image ? (
-            <img
-              src={project.image}
-              alt={`${project.title} screenshot`}
-              className="h-full w-full rounded-xl object-cover"
-            />
-          ) : (
-            <div className="max-w-md text-center">
-              <p className="text-sm uppercase tracking-[0.2em] text-zinc-600">
-                Project
-              </p>
-
-              <p className="mt-4 text-3xl font-semibold tracking-tight text-zinc-300">
-                {project.title}
-              </p>
-            </div>
-          )}
+        <div className="flex min-h-[520px] items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-950 p-10">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="max-h-[440px] w-auto max-w-[88%] object-contain"
+          />
         </div>
 
         <div className="flex flex-col">

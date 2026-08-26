@@ -13,7 +13,7 @@ export default function About() {
 
         <div>
           <h2 className="max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
-            Full-stack development with an interest in the systems behind the
+            Full stack development with an interest in the systems behind the
             interface.
           </h2>
 
