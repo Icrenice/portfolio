@@ -37,23 +37,23 @@ export const projects: Project[] = [
       "Cron",
       "PHPUnit"
     ],
-    image: "/projects/Event-sync/c2 event-sync.png",
+    image: "/projects/event-sync/c2-event-sync.png",
     links: [
       {
         label: "Architecture",
-        href: "/projects/event-sync/c2 event-sync.png",
+        href: "/projects/event-sync/c2-event-sync.png",
       },
       {
         label: "Components",
-        href: "/projects/event-sync/c3 event-sync.png",
+        href: "/projects/event-sync/c3-event-sync.png",
       },
       {
         label: "Data Model",
-        href: "/projects/event-sync/erd event-sync.png",
+        href: "/projects/event-sync/erd-event-sync.png",
       },
       {
         label: "Code Structure",
-        href: "/projects/event-sync/c4 event-sync.png",
+        href: "/projects/event-sync/c4-event-sync.png",
       },
     ],
   },
@@ -97,6 +97,6 @@ export const projects: Project[] = [
       "Testing",
     ],
     github: "https://github.com/Icrenice/Csharp-eindopdracht",
-    image: "projects/zoo-api/zoo-magemant-diagram.png",
+    image: "/projects/zoo-api/zoo-management-diagram.png"
   },
 ];

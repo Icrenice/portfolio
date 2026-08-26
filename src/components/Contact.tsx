@@ -39,7 +39,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="hhttps://www.linkedin.com/in/eric-abrokwah-195b12263/"
+              href="https://www.linkedin.com/in/eric-abrokwah-195b12263/"
               target="_blank"
               rel="noreferrer"
               className="text-zinc-400 transition hover:text-white"

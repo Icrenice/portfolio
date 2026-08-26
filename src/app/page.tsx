@@ -40,15 +40,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="about"
-        className="mx-auto min-h-[50vh] w-full max-w-7xl px-6 py-24 md:px-10"
-      >
-        <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">
-          About
-        </p>
-      </section>
-
       <Engineering />
       <About />
       <Contact />
