@@ -56,6 +56,19 @@ export default function ProjectCard({
               Source ↗
             </a>
           )}
+
+          {project.links?.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noreferrer"
+              className="text-sm text-zinc-300 transition hover:text-white"
+            >
+              {link.label} ↗
+            </a>
+          ))}
+          
         </div>
       </div>
 
