@@ -11,64 +11,31 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="border-t border-zinc-800 py-14">
-      <div className="mb-8 flex items-start justify-between gap-6">
-        <div>
+      <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <div className="min-w-0">
           <span className="text-sm text-zinc-600">
             {String(index + 1).padStart(2, "0")}
           </span>
 
-          <p className="mt-3 text-sm text-zinc-500">
+          <p className="mt-3 text-sm leading-relaxed text-zinc-500">
             {project.context}
             {project.period && ` · ${project.period}`}
           </p>
         </div>
 
-        <div className="flex gap-4 text-sm">
-          {project.demo && (
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noreferrer"
-              className="text-zinc-400 transition hover:text-white"
-            >
-              Demo ↗
-            </a>
-          )}
-
-          {project.live && (
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noreferrer"
-              className="text-zinc-400 transition hover:text-white"
-            >
-              Live ↗
-            </a>
-          )}
-
-          {project.github && (
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noreferrer"
-              className="text-zinc-400 transition hover:text-white"
-            >
-              Source ↗
-            </a>
-          )}
-
+        <div className="flex flex-wrap gap-2 md:justify-end">
           {project.links?.map((link) => (
             <a
               key={link.label}
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="text-sm text-zinc-300 transition hover:text-white"
+              className="inline-flex items-center gap-1 whitespace-nowrap rounded-full border border-zinc-800 px-3 py-1.5 text-xs text-zinc-400 transition hover:border-zinc-600 hover:text-white"
             >
-              {link.label} ↗
+              <span>{link.label}</span>
+              <span aria-hidden="true">↗</span>
             </a>
           ))}
-          
         </div>
       </div>
 

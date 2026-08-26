@@ -78,7 +78,12 @@ export const projects: Project[] = [
       "CRON Jobs",
       ],
     image: "/projects/fitness-leveling/logo.png",
-    demo: "/projects/fitness-leveling/demo.mp4",
+    links: [
+      {
+        label: "Demo",
+        href: "/projects/fitness-leveling/demo.mp4",
+      },
+    ],
   },
 
   {
@@ -96,7 +101,12 @@ export const projects: Project[] = [
       "SQL Server",
       "Testing",
     ],
-    github: "https://github.com/Icrenice/Csharp-eindopdracht",
-    image: "/projects/zoo-api/zoo-management-diagram.png"
+    image: "/projects/zoo-api/zoo-management-diagram.png",
+    links: [
+      {
+        label: "Source",
+        href: "https://github.com/Icrenice/Csharp-eindopdracht",
+      },
+    ],
   },
 ];
