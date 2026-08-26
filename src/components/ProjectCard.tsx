@@ -1,4 +1,5 @@
 import type { Project } from "@/data/projects";
+import Image from "next/image";
 
 type ProjectCardProps = {
   project: Project;
@@ -41,7 +42,7 @@ export default function ProjectCard({
 
       <div className="grid gap-10 lg:grid-cols-[1.25fr_1fr]">
         <div className="flex min-h-[520px] items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-950 p-10">
-          <img
+          <Image
             src={project.image}
             alt={project.title}
             className="max-h-[440px] w-auto max-w-[88%] object-contain"
