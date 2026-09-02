@@ -1,12 +1,12 @@
 # Eric Abrokwah — Developer Portfolio
 
-Personal portfolio showcasing selected full-stack and backend development work.
+Personal developer portfolio showcasing selected full-stack and backend projects.
 
 ## Live
 
 https://www.ericabrokwah.dev
 
-## Built with
+## Tech Stack
 
 - Next.js
 - TypeScript
@@ -14,8 +14,13 @@ https://www.ericabrokwah.dev
 - GitHub Actions
 - Vercel
 
-## Featured work
+## Featured Projects
 
-- Event Sync Plugin
-- Fitness Leveling
-- Zoo Management System
+### Event Sync Plugin
+Provider-independent event synchronization platform for WordPress, with layered architecture, external API integrations, custom persistence and WPGraphQL support.
+
+### Fitness Leveling
+AI-powered cross-platform fitness application with personalized daily quests, progress tracking, streaks and social competition.
+
+### Zoo Management System
+ASP.NET Core application with REST APIs, Entity Framework, relational data and domain-specific business logic.
